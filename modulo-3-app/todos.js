@@ -1,3 +1,6 @@
+// <!-- Developed by: Wallace Frota -->
+//     <!-- Instagram: @frotadev -->
+
 //referenciando elementos da DOM
 var listElement = document.querySelector('#app ul');
 var inputElement = document.querySelector('#app input');
