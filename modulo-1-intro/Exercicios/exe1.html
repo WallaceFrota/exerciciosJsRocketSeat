@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>1 exercicio</title>
+</head>
+<body>
+    <script type="text/javascript">
+            //Retorne o seguinte conteúdo:
+                  function expoMensagem(endereco) {
+                    return (
+                    "O usuário mora em "+
+                     endereco.cidade + " / " +
+                      endereco.uf + " no bairro " +
+                       endereco.bairro + " na rua " +
+                        endereco.rua + " com nº " + 
+                          endereco.numero + "."
+                      );
+            
+                  }
+            //Crie uma função que dado o objeto a seguir:
+                var endereco = {
+                rua: 'Rua dos pinheiros',
+                numero: 270,
+                bairro: 'Centro',
+                cidade: 'Castanhal',
+                uf: 'Pa' 
+            };
+            document.write(expoMensagem(endereco));
+    </script>
+</body>
+</html>

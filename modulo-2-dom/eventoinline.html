@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos Inline</title>
+</head>
+<body>
+
+	<div id="app">
+		<!--o evento onclick chama a função mostrando o alerta-->
+		<button onclick="mostraAlerta()">Me pressione</button>
+		<input onkeypress="envioTexto()"/>
+	</div>
+
+     <script type="text/javascript">
+     	// Manipulando a dom - eventos inline
+        function mostraAlerta() {
+        	alert('Botão foi clicado.');
+        };
+        function envioTexto() {
+        	alert("O envio foi feito.")
+        }
+     </script>
+</body>
+</html>

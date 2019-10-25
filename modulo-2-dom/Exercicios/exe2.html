@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercicio 2</title>
+</head>
+<body>
+    <ul id="list"></ul>
+    
+    <input type="text" name="nome">
+    <button id="btn">Adicionar</button>
+
+    <script type="text/javascript">
+
+    	//Preencha uma lista (<ul>) no HTML com os itens da seguinte forma li:
+        var listElement = document.getElementById('list');
+        var btnList = document.getElementById('btn');
+
+        btnList.onclick = function() {
+            var nomeInput = document.querySelector('input[name=nome]');
+            var nomeText = nomeInput.value;
+
+            var liElement = document.createElement('li');
+
+            var textElement = document.createTextNode(nomeText);
+
+            liElement.appendChild(textElement);
+
+            nomeInput.value = ''; // ficando vazio ao adicionar
+            nomeInput.focus(); // voltando no focus do input
+
+            listElement.appendChild(liElement);
+        }
+    </script>
+</body>
+</html>

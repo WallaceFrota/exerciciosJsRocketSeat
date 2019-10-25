@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercício 4</title>
+</head>
+<body>
+   <script type="text/javascript">
+   	   //Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é:
+   	  function experiencia(anosEstudo) {
+   	     if (anosEstudo <= 1) {
+   	         return "Iniciante";
+   	       } else if (anosEstudo <= 3) {
+   	         return "Intermediário";
+   	       } else if (anosEstudo <= 6) {
+   	         return "Avançado";
+   	       } else {
+   	         return "Jedi Master";
+   	       }
+   	     }
+   	  //variavel de quantos anos de experiencia 
+   	  var anosEstudo = prompt("Quantos anos de experiencia:");
+   	  //escreve na tela a experiencia do usuário
+   	  document.write("Você é do nível: ", experiencia(anosEstudo));
+
+   	  // De 0-1 ano: Iniciante
+   	  // De 1-3 anos: Intermediário
+   	  // De 3-6 anos: Avançado
+   	  // De 7 acima: Jedi Master
+
+   </script>
+</body>
+</html>

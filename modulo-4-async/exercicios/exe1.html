@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercício 1</title>
+</head>
+<body>
+   <script type="text/javascript">
+//Crie uma função que recebe a idade de um usuário e retorna uma Promise que depois de 2 segundos retornará se usuário é maior ou não que 18 anos. Se o usuário ter mais que 18 anos de idade o resultado deve cair no .then, caso contrário, no .catch
+   	
+       var idade = prompt('Digite sua idade: ')
+       
+   	   function checaIdade(idade) {
+   	    return new Promise(function( resolve, reject) {
+   	    	setTimeout(function() {
+   	    		return idade >= 18 ? resolve() : reject();//condição ternária
+   	    	}, 2000);//2 segundos
+   	    });
+   	   }
+
+   	   checaIdade(15)
+   	    .then(function() {
+   	    document.write("Maior que 18");
+   	    })
+   	    .catch(function() {
+   	    document.write("Menor que 18");
+   	    });
+
+   </script>
+</body>
+</html>

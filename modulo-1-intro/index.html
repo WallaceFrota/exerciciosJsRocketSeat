@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Curso javascript</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <script>
+        /*
+        // javascript váriaveis e dados
+        
+        var nome = "Wallace"; //string
+        var idade = "19" //inteiro
+        var peso = "60.0" // float decimais
+        var humano = "true" //boolean
+        var alunos = ['Wallace', 'pedro', 'Lucas']; //vetores
+        */
+
+        //variáveis que guardam mais de um valor
+        var aluno = {
+            nome: 'Wallace',
+            idade: 19,
+            peso: 60.0,
+            humano: true,
+            alunos: ['Wallace', 'pedro', 'Lucas'],
+        };
+
+        //mostra na tela de console log
+        console.log(aluno.alunos[0]); //buscando o aluno na posição 1
+        console.log(aluno.idade);//mostrando a idade 
+        console.log(aluno.peso);//mostrando a peso
+
+        //mostra na tela
+        document.write("Seu nome é ", aluno.alunos[0], " sua idade é: ", aluno.idade, " seu peso é: ", aluno.peso);
+    </script>
+</body>
+
+</html>

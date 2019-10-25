@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Condicionais</title>
+</head>
+<body>
+     <script type="text/javascript">
+        // Condicionais javascript if e else
+
+        function retornaSexo(sexo) {
+     		// M, F
+     		// Masculino, Feminino
+
+     		//Fazendo verificações
+     		if (sexo == 'M') {
+                return 'Masculino';
+     		} 
+     		else if (sexo == 'F') {
+     			return 'Feminino';
+     		} 
+     		else {
+     			return 'Outro';
+     		}
+
+     	}
+   /*  	
+     	//Condicionais Switch case
+        function retornaSexo(sexo) {
+     		switch (sexo) {
+     			case 'M':
+     			   return 'Masculino';
+     			case 'F':
+     			   return 'Feminino';
+     			default:
+     			   return 'Outro';
+     		}
+
+     	}
+   */
+        //atribuindo fora do escopo da função
+     	var result = retornaSexo('F');
+		 
+     	//mostrando no console
+     	console.log(result);
+     </script>
+</body>
+</html>

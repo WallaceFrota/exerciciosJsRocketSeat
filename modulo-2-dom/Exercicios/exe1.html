@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercício 1</title>
+</head>
+<body>
+    <button id="btn">ADD</button>
+
+    <div id="squares"></div>
+
+    <footer>
+        <p>FrotaDev &copy; Todos os Direitos Reservados!</p>
+    </footer>
+
+    <script type="text/javascript">
+
+        var btnElement = document.querySelector('#btn');
+        var squaresElement = document.getElementById('squares');
+
+        // Changed color function
+        function getRandomColor() {
+         var letters = "0123456789ABCDEF";
+         var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color; // new color to getRandomColor
+        }
+
+        btnElement.onclick = function() {
+            //create new element in div square
+            var square = document.createElement('div');
+
+        	square.style.width = '100px';
+        	square.style.height = '100px';
+        	square.style.backgroundColor = '#f00';
+
+            square.onmouseover = function() {
+            	square.style.backgroundColor = getRandomColor();
+            }
+        	squaresElement.appendChild(square);
+        };
+    </script>
+</body>
+</html>

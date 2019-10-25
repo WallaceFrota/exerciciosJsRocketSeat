@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lidando com Elementos</title>
+</head>
+<body>
+	<div id="app">
+		
+	</div>
+
+    <script type="text/javascript">
+    	//criando links com createElement
+    	var linkElement = document.createElement('a');
+
+        //atribuinado elementos
+        linkElement.setAttribute('href', 'http://skyplink.tk');
+        linkElement.setAttribute('title', 'Site PassUrl');
+        linkElement.setAttribute('target', '_blank');
+
+        //Nome do texto do link
+        var textElement = document.createTextNode('Acessar SkypLink');
+
+        //Adicionar texto do elemento ao link
+        linkElement.appendChild(textElement);
+        
+        //Jogando o link dentro do corpo html da div app
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+
+    </script>
+</body>
+</html>

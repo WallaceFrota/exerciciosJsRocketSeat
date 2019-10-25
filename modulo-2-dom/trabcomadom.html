@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trabalhando com a DOM</title>
+</head>
+<body>
+	<div id="app">
+	   <input type="text" name="nome" id="nome" class="nome" />
+	   <button class="btn">Adicionar</button>
+	</div>
+
+   <script type="text/javascript">
+   	//guardando na variável o input com elementbyid apenas um pois id é único
+       var inputElement = document.getElementById('nome');
+
+       //passa qual a tag que está utilizando, sempre retorna um vetor
+       var inputElement = document.getElementsByTagName('input')[0];//passando o 0 quando se tem um único input e pegando o 1º input caso existisse outros
+
+       //sempre retorna um vetor porque a classe não é única
+       var inputElement = document.getElementsByClassName('nome')[0];
+       
+       //Utilizando query selector busca os elementos na DOM, percorre a até encontrar o elemento, falando onde está dentro do parêntese sempre retorna apenas um elemento a não ser se utilizar querySelectorAll.
+       var inputElement = document.querySelector('div#app input');
+
+       //referenciando a propriedade do input a ser buscado
+       var inputElement = document.querySelector('input[name=nome]');
+
+       //Utilizando para disparar ações na tela.
+       var btnElement = document.querySelector('.btn');
+
+       //quando o botão for clicado dispara essa função
+       btnElement.onclick = function() {
+       	//mostrando o que é digitado no input
+       	var text = inputElement.value;
+       	alert(text);
+       }
+   </script>
+</body>
+</html>
