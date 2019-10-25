@@ -1,3 +1,5 @@
+// <!-- Developed by: Wallace Frota -->
+// <!-- Instagram: @frotadev -->
 //Utilizando Ajax para pegar informações sem recarregar a página
 var xhr = new XMLHttpRequest(); //método request
 
