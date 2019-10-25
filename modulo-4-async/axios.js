@@ -6,3 +6,5 @@ axios.get('https://api.github.com/users/wallacefrota').then(function(response) {
      
      console.warn(error, 'Erro na requisição');
 });
+
+// Wallace Frota - @frotadev
