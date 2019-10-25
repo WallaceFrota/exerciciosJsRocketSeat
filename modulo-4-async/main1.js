@@ -1,3 +1,4 @@
+// Wallace Frota - @frotadev
 //Utilizando promises biblioteca ajax para requisições
 var minhaPromise = function() {
   return new Promise(function(resolve, reject) {
